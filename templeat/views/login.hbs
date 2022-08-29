@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+     {{>links}}
+
+
+</head>
+<body>
+   {{>navbar}}
+   <h1> Login </h1>
+    <form action="/login" method="post" class="form">
+  <!-- Email input -->
+  <div class="containar">
+  <div class="form-outline mb-4">
+    <input type="email" id="form2Example1" class="form-control" name="email" required />
+    <label class="form-label" for="form2Example1">Email address</label>
+  </div>
+
+  <!-- Password input -->
+  <div class="form-outline mb-4">
+    <input type="password" id="form2Example2" class="form-control" name="password" required />
+    <label class="form-label" for="form2Example2">Password</label>
+  </div>
+
+  <!-- 2 column grid layout for inline styling -->
+ 
+     
+  <!-- Submit button -->
+  <div>
+  <button type="submit" id="btn" class="btn btn-primary ">Sign in</button><br><br>
+</div>
+  <!-- Register buttons -->
+  <div class="text-center">
+    <p>Not a member? <a href="/contect">Register</a></p>
+    <p>or sign up with:</p><br>
+    <button type="button" class="btn btn-link btn-floating mx-1">
+      <i class="fab fa-facebook-f"></i>
+    </button>
+
+ 
+</form>
+</body>
+</html>
